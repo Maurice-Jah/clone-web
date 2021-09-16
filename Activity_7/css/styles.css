@@ -1,0 +1,334 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.header {
+  display: flex;
+  padding: 1rem 3rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.hero {
+  height: 90vh;
+  background-image: url(/images/hero-bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+}
+
+.hero-text {
+  font-size: 3rem;
+  font-weight: 300;
+  margin-left: 5rem;
+  width: 50%;
+  color: white;
+  border-bottom: 10px solid white;
+  line-height: 1.2;
+  padding-bottom: 1rem;
+}
+
+.hero-text span {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 6rem;
+  font-weight: bold;
+  padding-top: 3rem;
+}
+
+.hero-services {
+  display: flex;
+  width: 50%;
+  margin-left: 5rem;
+  margin-top: 2rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hero-services p {
+  margin-top: 1rem;
+  color: white;
+}
+
+/* service help */
+
+.service-help {
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 5rem;
+}
+
+.service-help .text {
+  font-size: 1rem;
+  opacity: 0.6;
+  margin-bottom: 2rem;
+}
+
+.service-help h1 {
+  font-size: 4rem;
+}
+
+.service-help .sub-text {
+  font-size: 1.3rem;
+  width: 60%;
+  font-weight: normal;
+  margin: 2rem auto;
+  line-height: 1.5;
+}
+
+.service-help .book-now {
+  padding: 1.5rem 2rem;
+  border: unset;
+  outline: none;
+  background-color: #d1161e;
+  color: white;
+  border-radius: 4px;
+  transition: all 0.2s ease-in-out;
+}
+
+.service-help .book-now:hover {
+  background-color: #922328;
+  cursor: pointer;
+}
+
+/* help section */
+.help {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem;
+}
+
+.help-plumber {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.help-plumber .texts {
+  margin-top: 2rem;
+}
+
+.help-plumber .text {
+  font-size: 2rem;
+}
+
+.help-plumber .call {
+  color: red;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+.help-plumber2 {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-around;
+}
+
+.help-plumber2 p {
+  width: 30%;
+  line-height: 1.5;
+  margin-top: 3rem;
+}
+
+.help-plumber2 img {
+  margin-top: -5rem;
+}
+
+.btn {
+  padding: 1.5rem 2rem;
+  border: unset;
+  outline: none;
+  background-color: #d1161e;
+  color: white;
+  border-radius: 4px;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #922328;
+  cursor: pointer;
+}
+
+/* quality */
+
+.quality {
+  padding: 5rem;
+
+  padding-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+
+  gap: 5rem;
+  align-items: center;
+  background-image: radial-gradient(#d9d7dc, #bab1b6);
+}
+
+.quality-image {
+  width: 30rem;
+  height: 35rem;
+}
+
+.quality-image img {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+
+.quality-others {
+  width: 60%;
+  padding: 2rem;
+}
+
+.quality-heading {
+  font-size: 5rem;
+  color: blue;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 10px solid red;
+}
+
+.quality-sub {
+  line-height: 1.8;
+  font-size: 1.2rem;
+  padding-bottom: 2rem;
+}
+
+/* services */
+
+.services {
+  background-color: white;
+  padding: 5rem;
+}
+
+.flex {
+  display: flex;
+  gap: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.services-heading {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.services-main {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.services-sub {
+  font-size: 1rem;
+  margin-top: 1rem;
+  line-height: 1.6;
+}
+
+.services-001 img {
+  display: inline-block;
+  padding: 1rem;
+  border-radius: 50%;
+  background-color: #e71a23;
+}
+
+/* About */
+
+.about {
+  background-color: #104e92;
+  padding: 5rem;
+  align-items: center;
+  gap: 2rem;
+  display: flex;
+}
+
+.about-text {
+  margin-left: 8rem;
+  color: white;
+}
+
+.about-text .heading {
+  margin-bottom: 1rem;
+}
+
+.about-text .main {
+  font-size: 5rem;
+  width: 50%;
+}
+
+.about-images img {
+  width: 220px;
+  height: 200px;
+  display: inline-block;
+}
+
+.imageDiv1,
+.imageDiv2 {
+  margin-right: 8rem;
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* CTA */
+.cta {
+  background-color: #fff;
+  text-align: center;
+  padding: 5rem;
+  width: 60%;
+  margin: auto;
+}
+
+.cta-main {
+  margin-bottom: 2rem;
+}
+
+.cta-sub {
+  margin-bottom: 2rem;
+  line-height: 1.7;
+}
+
+.cta-btn {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.cta-btn .btn {
+  padding: 1rem 2.3rem;
+  font-size: 0.9rem;
+}
+
+.cta-btn .outline {
+  color: black;
+  border: 1px solid black;
+  background-color: transparent;
+}
+
+/* Footer */
+.footer {
+  padding: 5rem;
+  background-color: #333333;
+  color: white;
+  text-align: center;
+}
+
+.footer p {
+  width: 40%;
+  margin: auto;
+}
