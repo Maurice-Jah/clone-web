@@ -33,7 +33,6 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-
   justify-content: center;
 }
 
@@ -48,11 +47,27 @@ body {
   padding-bottom: 1rem;
 }
 
+@media screen and (max-width: 600px) {
+  .hero-text {
+    width: 70%;
+    font-size: 3rem;
+    margin-left: 1rem;
+    margin: auto;
+    margin-bottom: 8rem;
+  }
+}
+
 .hero-text span {
   font-family: "Archivo Black", sans-serif;
   font-size: 6rem;
   font-weight: bold;
   padding-top: 3rem;
+}
+
+@media screen and (max-width: 900px) {
+  .hero-text span {
+    font-size: 3rem;
+  }
 }
 
 .hero-services {
@@ -62,6 +77,12 @@ body {
   margin-top: 2rem;
   justify-content: space-around;
   align-items: center;
+}
+
+@media screen and (max-width: 900px) {
+  .hero-services {
+    display: none;
+  }
 }
 
 .hero-services p {
@@ -75,6 +96,12 @@ body {
   background-color: #f2f2f2;
   text-align: center;
   padding: 5rem;
+}
+
+@media screen and (max-width: 600px) {
+  .service-help {
+    padding: 5rem 2rem;
+  }
 }
 
 .service-help .text {
@@ -93,6 +120,13 @@ body {
   font-weight: normal;
   margin: 2rem auto;
   line-height: 1.5;
+}
+
+@media screen and (max-width: 600px) {
+  .service-help .sub-text {
+    width: 100%;
+    line-height: 2;
+  }
 }
 
 .service-help .book-now {
@@ -122,6 +156,12 @@ body {
   gap: 2.5rem;
 }
 
+@media screen and (max-width: 1200px) {
+  .help-plumber {
+    flex-direction: column;
+  }
+}
+
 .help-plumber .texts {
   margin-top: 2rem;
 }
@@ -136,10 +176,18 @@ body {
   font-weight: bold;
   margin-top: 1rem;
 }
+
 .help-plumber2 {
   display: flex;
   gap: 1rem;
   justify-content: space-around;
+}
+
+@media screen and (max-width: 1200px) {
+  .help-plumber2 {
+    flex-direction: column;
+    order: 2;
+  }
 }
 
 .help-plumber2 p {
@@ -148,8 +196,20 @@ body {
   margin-top: 3rem;
 }
 
+@media screen and (max-width: 1200px) {
+  .help-plumber2 p {
+    width: 100%;
+  }
+}
+
 .help-plumber2 img {
   margin-top: -5rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .help-plumber2 img {
+    margin-top: 0rem;
+  }
 }
 
 .btn {
@@ -171,19 +231,44 @@ body {
 
 .quality {
   padding: 5rem;
-
   padding-bottom: 0;
   display: flex;
   justify-content: space-between;
-
   gap: 5rem;
   align-items: center;
   background-image: radial-gradient(#d9d7dc, #bab1b6);
 }
 
+@media screen and (max-width: 900px) {
+  .quality {
+    gap: 1rem;
+    padding: 5rem 0rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .quality {
+    flex-direction: column;
+  }
+}
+
 .quality-image {
   width: 30rem;
   height: 35rem;
+}
+
+@media screen and (max-width: 900px) {
+  .quality-image {
+    width: 55rem;
+    height: 25rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .quality-image {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .quality-image img {
@@ -197,6 +282,12 @@ body {
   padding: 2rem;
 }
 
+@media screen and (max-width: 900px) {
+  .quality-others {
+    width: 100%;
+  }
+}
+
 .quality-heading {
   font-size: 5rem;
   color: blue;
@@ -205,12 +296,31 @@ body {
   border-bottom: 10px solid red;
 }
 
+@media screen and (max-width: 900px) {
+  .quality-heading {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .quality-heading {
+    font-size: 5rem;
+  }
+}
+
 .quality-sub {
   line-height: 1.8;
   font-size: 1.2rem;
   padding-bottom: 2rem;
 }
 
+@media screen and (max-width: 1200px) {
+  .imageDiv1,
+  .imageDiv2 {
+    margin-right: 0rem;
+    gap: 2rem;
+  }
+}
 /* services */
 
 .services {
@@ -224,6 +334,12 @@ body {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+
+@media screen and (max-width: 600px) {
+  .flex {
+    flex-direction: column;
+  }
+}
 .services-heading {
   font-size: 3rem;
   margin-bottom: 2rem;
@@ -234,10 +350,23 @@ body {
   margin-top: 1rem;
 }
 
+@media screen and (max-width: 600px) {
+  .services-main {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+}
+
 .services-sub {
   font-size: 1rem;
   margin-top: 1rem;
   line-height: 1.6;
+}
+
+@media screen and (max-width: 600px) {
+  .services-sub {
+    font-size: 1.5rem;
+  }
 }
 
 .services-001 img {
@@ -245,6 +374,13 @@ body {
   padding: 1rem;
   border-radius: 50%;
   background-color: #e71a23;
+}
+
+@media screen and (max-width: 600px) {
+  .services-001 img {
+    padding: 2rem;
+    width: 9rem;
+  }
 }
 
 /* About */
@@ -257,9 +393,24 @@ body {
   display: flex;
 }
 
+@media screen and (max-width: 1200px) {
+  .about {
+    flex-direction: column;
+    padding: 5rem 2rem;
+    gap: 1rem;
+  }
+}
+
 .about-text {
   margin-left: 8rem;
   color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .about-text {
+    width: 100%;
+    margin-left: 0rem;
+  }
 }
 
 .about-text .heading {
@@ -271,10 +422,43 @@ body {
   width: 50%;
 }
 
+@media screen and (max-width: 1200px) {
+  .about-text .main {
+    width: 100%;
+  }
+}
+
 .about-images img {
   width: 220px;
   height: 200px;
   display: inline-block;
+}
+
+@media screen and (max-width: 1200px) {
+  .about-images {
+    margin-top: 2rem;
+  }
+
+  .about-images img {
+    width: 400px;
+    height: 300px;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .about-images img {
+    width: 250px;
+    height: 150px;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about-images img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .imageDiv1,
@@ -285,6 +469,21 @@ body {
   margin-bottom: 2rem;
 }
 
+@media screen and (max-width: 1200px) {
+  .imageDiv1,
+  .imageDiv2 {
+    margin-right: 0rem;
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .imageDiv1,
+  .imageDiv2 {
+    flex-direction: column;
+  }
+}
+
 /* CTA */
 .cta {
   background-color: #fff;
@@ -292,6 +491,13 @@ body {
   padding: 5rem;
   width: 60%;
   margin: auto;
+}
+
+@media screen and (max-width: 900px) {
+  .cta {
+    padding: 5rem 2rem;
+    width: 100%;
+  }
 }
 
 .cta-main {
@@ -309,9 +515,23 @@ body {
   gap: 1rem;
 }
 
+@media screen and (max-width: 600px) {
+  .cta-btn {
+    flex-direction: column;
+    width: 35%;
+    margin: 2rem auto;
+  }
+}
+
 .cta-btn .btn {
   padding: 1rem 2.3rem;
   font-size: 0.9rem;
+}
+
+@media screen and (max-width: 600px) {
+  .cta-btn .btn {
+    padding: 1.5rem 1.5rem;
+  }
 }
 
 .cta-btn .outline {
@@ -331,4 +551,10 @@ body {
 .footer p {
   width: 40%;
   margin: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .footer p {
+    width: 100%;
+  }
 }
